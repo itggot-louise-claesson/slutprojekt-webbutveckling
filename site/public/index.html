@@ -3,14 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Thorsgården</title>
 </head>
 <body>
     <div class="container">
 
-        <header>
-            <a href="index.html">Hem</a>
-            <a href="index2.html">Kontakt</a>
+        <header>  
+            
+            
+
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="index.html">Hem</a>
+                <a href="index2.html">Kontakt</a>
+            </div>
+                                
+            <span onclick="openNav()"><i class="material-icons">menu</i></span>
+                  
         </header>
 
         <main> 
@@ -18,18 +28,15 @@
 <article class="text_about"></article>
 <article class="img1"></article>
 <article class="img2"></article>
-<article class="img3"></article>
-       
-            <article></article>
-       
-        </main>
+<article class="img3"></article> </main>
 
         <footer>
             <p class="facebook">Thorsgården</p>
             <p class="nummer">+46 71 234 56 78</p>
         </footer>
-
+        <script src="./js/menu.js"></script>
     </div>
     
 </body>
-</html>
+</html>
+

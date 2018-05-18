@@ -3,26 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Thorsgården</title>
 </head>
 <body>
     <div class="container">
 
-        <header>
-            <a href="index.html">Hem</a>
-            <a href="index2.html">Kontakt</a>
+        <header>  
+            
+            
+
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="index.html">Hem</a>
+                <a href="index2.html">Kontakt</a>
+            </div>
+                                
+            <span onclick="openNav()"><i class="material-icons">menu</i></span>
+                  
         </header>
 
         <main> 
 <input type="text" placeholder="Namn" />
 <input type="text" placeholder="Email" />
 <input type="text" placeholder="Telefon nummer" />
-<input type="text" placeholder="Berätta kort om dig och din häst!" />
 
 <article class="hitta_hit"></article>
-<article class="vägbeskrivning"></article>
+<article class="vagbeskrivning"></article>
 
-<article class="intresseanmälan"></article>
+<article class="intresseanmalan"></article>
 <article class="telefonnr"></article>
 <article class="kontakt"></article>
 
@@ -33,20 +42,17 @@
     <option>Samtal</option>
 </select>
 
-<article class="berätta"></article>
+<textarea name="textarea">Berätta kort om dig och din häst!</textarea>
 
-<button class="skicka">Skicka</button>
-       
-            <article></article>
-       
-        </main>
+<button class="skicka">Skicka</button> </main>
 
         <footer>
             <p class="facebook">Thorsgården</p>
             <p class="nummer">+46 71 234 56 78</p>
         </footer>
-
+        <script src="./js/menu.js"></script>
     </div>
     
 </body>
-</html>
+</html>
+
