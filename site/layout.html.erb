@@ -3,15 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/main.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Thorsgården</title>
 </head>
 <body>
     <div class="container">
 
         <header>  
-            
-            
+             
 
             <div id="mySidenav" class="sidenav">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -19,15 +17,19 @@
                 <a href="index2.html">Kontakt</a>
             </div>
                                 
-            <span onclick="openNav()"><i class="material-icons">menu</i></span>
+            <span onclick="openNav()"></span>
                   
         </header>
 
         <main> <%=yield%> </main>
 
         <footer>
-            <p class="facebook">Thorsgården</p>
-            <p class="nummer">+46 71 234 56 78</p>
+
+            <a href="https://www.facebook.com/Thorsgarden/" class="facebook">Thorsgården</a>
+
+            <article class="fb_icon"></article>
+            <p class="number">+46 71 234 56 78</p>
+            <article class="phone_icon"></article>
         </footer>
         <script src="./js/menu.js"></script>
     </div>
