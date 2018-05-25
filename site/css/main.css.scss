@@ -1,152 +1,40 @@
-@media only screen and (max-device-width: 400px) {
-
 .container {
-    width: 375px;
-    height: 667px;
     display: grid;
-    grid-template-rows: repeat(18, 1fr);
-    grid-template-columns: repeat(6, 1fr);
-    grid-row-gap: 5px;
-    grid-column-gap: 5px;
-}
-
-html, body {
-    padding: 0;
-    margin: 0;
 }
 
 header {
     display: grid;
-    grid-template-columns: repeat(9, 1fr);
-    grid-template-rows: repeat(6, 1fr);
-    grid-column: 1 / 7;
-    grid-row: 1 / 4;
-    background-color: lightgrey;
-    background-image: url(../img/test1_mob.jpg);
-    background-repeat: no-repeat;
     background-position: 50% 0%;
+    background-repeat: no-repeat;
 }
 
 main {
-    grid-column: 1 / 7;
-    grid-row: 4 / 17;
     display: grid;
-    grid-template-rows: repeat(20, 1fr);
-    grid-template-columns: repeat(12, 1fr);
     grid-row-gap: 3px;
     grid-column-gap: 3px;
 }
 
-.välkommen {
-    grid-row: 1 / 2;
-    grid-column: 2 / 12;
-    background-color: lightgrey;
+a {
+    text-decoration: none;
 }
 
-h3 {
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    display: grid;
-    justify-content: center;
-    align-items: center;
+a:visited {
+    color: black;
 }
 
-p {
-    margin: 0;
+.phone_icon {
+    background-image: url(../img/phone_icon.png);
+    background-repeat: no-repeat;
 }
 
-.text_about {
-    grid-row: 2 / 6;
-    grid-column: 2 / 12;
-    background-color: lightgrey;
-}
-
-.text_about_p {
-    font-size: 13px;
-    margin: 4px;
-}
-
-.img1 {
-    grid-row: 6 / 11;
-    grid-column: 2 / 12;
-    background-image: url(../img/img1.jpg);
-}
-
-.img2 {
-    grid-row: 11 / 16;
-    grid-column: 2 / 12;
-    background-color: lightgrey;
-    background-image: url(../img/img2.jpg);
-}
-
-.img3 {
-    grid-row: 16 / 21;
-    grid-column: 2 / 12;
-    background-color: lightgrey;
-    background-image: url(../img/img3.jpg);
-}
-
-.hitta_hit {
-    grid-column: 2 / 12;
-    grid-row: 1 / 2;
-    background-color: lightgrey;
-}
-
-.vagbeskrivning {
-    grid-column: 2 / 12;
-    grid-row: 2 / 8;
-    background-color: lightgrey;
-}
-
-.vagbeskrivning_p {
-    font-size: 12px;
-    margin: 3px;
-}
-
-.intresseanmalan {
-    grid-column: 2 / 12;
-    grid-row: 9 / 10;
-    background-color: lightgrey;
-}
-
-select {
-    grid-column: 7 / 12;
-    grid-row: 12 / 14;
-}
-
-textarea {
-    grid-column: 2 / 12;
-    grid-row: 14 / 18;
-}
-
-input:nth-of-type(1) {
-    grid-column: 2 / 7;
-    grid-row: 10 / 12;
-}
-
-input:nth-of-type(2) {
-    grid-column: 7 / 12;
-    grid-row: 10 / 12;
-}
-
-input:nth-of-type(3) {
-    grid-column: 2 / 7;
-    grid-row: 12 / 14;
-}
-
-.skicka {
-    grid-column: 4 / 10;
-    grid-row: 19 / 20;
+.fb_icon {
+    background-image: url(../img/fb_icon.png);
+    background-repeat: no-repeat;
 }
 
 footer {
-    grid-row: 17 / 19;
-    grid-column: 1 / 7;
+    background-color: rgb(215, 184, 245); 
     display: grid;
-    grid-template-columns: repeat(16, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    background-color: lightgrey;
 }
 
 footer p {
@@ -159,88 +47,228 @@ footer p {
     padding: 0;
 }
 
-a {
-    text-decoration: none
-}
-
-a:visited {
-    color: black;
-}
-
-.facebook {
-    grid-column: 4 / 8;
-    grid-row: 2 / 3;
-}
-
-.fb_icon {
-    grid-column: 3 / 4;
-    grid-row: 2 / 3;
-    background-image: url(../img/fb_icon.png);
-    background-repeat: no-repeat;
-}
-
-.number {
-    grid-column: 10 / 15;
-    grid-row: 2 / 3;
-}
-
-.phone_icon {
-    grid-column: 9 / 10;
-    grid-row: 2 / 3;
-    background-image: url(../img/phone_icon.png);
-    background-repeat: no-repeat;
-}
-
-span {
-    grid-column: 9 / 10;
-    grid-row: 3 / 5;
+h3 {
+    margin: 0;
+    padding: 0;
+    text-align: center;
     display: grid;
-    background-image: url(../img/baseline-menu-black-18.png);
-    background-repeat: no-repeat;
-}
-
-/* The side navigation menu */
-.sidenav {
-    height: 100%; /* 100% Full-height */
-    width: 0; /* 0 width - change this with JavaScript */
-    position: fixed; /* Stay in place */ 
-    z-index: 100; /* Stay on top */
-    top: 0; /* Stay at the top */
-    left: 0;
-    background-color: grey; 
-    overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 60px; /* Place content 60px from the top */
-    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
-}
-
-/* The navigation menu links */
-.sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #000000;
-    display: block;
-    transition: 0.3s;
-}
-
-/* When you mouse over the navigation links, change their color */
-.sidenav a:hover {
-    color: darkgrey;
-}
-
-/* Position and style the close button (top right corner) */
-.sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
+    justify-content: center;
+    align-items: center;
 }
 
 
 
-}
+@media only screen and (max-device-width: 400px) {
 
+    .container {
+        width: 375px;
+        height: 667px;
+        grid-template-rows: repeat(18, 1fr);
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    body {
+        padding: 0;
+        margin: 0;
+    }
+
+    header {
+        grid-template-columns: repeat(9, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        grid-column: 1 / 7;
+        grid-row: 1 / 4;
+        background-image: url(../img/test1_mob.jpg);
+    }
+
+
+    main {
+        grid-column: 1 / 7;
+        grid-row: 4 / 17;
+        grid-template-rows: repeat(20, 1fr);
+        grid-template-columns: repeat(12, 1fr);
+    }
+
+    .välkommen {
+        grid-row: 1 / 2;
+        grid-column: 2 / 12;  
+    }
+
+    p {
+        margin: 0;
+    }
+
+    .text_about {
+        grid-row: 2 / 6;
+        grid-column: 2 / 12;
+        border-width: 1px;
+        border-style: solid;
+        border-color: rgb(101, 101, 101);  
+    }
+
+    .text_about_p {
+        font-size: 13px;
+        margin: 5px;
+    }
+
+    .img1 {
+        grid-row: 6 / 11;
+        grid-column: 2 / 12;
+        background-image: url(../img/img1.jpg);
+    }
+
+    .img2 {
+        grid-row: 11 / 16;
+        grid-column: 2 / 12; 
+        background-image: url(../img/img2.jpg);
+    }
+
+    .img3 {
+        grid-row: 16 / 21;
+        grid-column: 2 / 12; 
+        background-image: url(../img/img3.jpg);
+    }
+
+    .hitta_hit {
+        grid-column: 2 / 12;
+        grid-row: 1 / 2;
+    }
+
+    .vagbeskrivning {
+        grid-column: 2 / 12;
+        grid-row: 2 / 8;
+        border-width: 1px;
+        border-style: solid;
+        border-color: rgb(120, 120, 120); 
+        p {
+            font-size: 12px;
+            margin: 3px;
+        }
+        p:nth-of-type(2) {
+            display: none;
+        }
+    }
+
+    .vagbeskrivning_p {
+        font-size: 12px;
+        margin: 3px;
+    }
+
+    .intresseanmalan {
+        grid-column: 2 / 12;
+        grid-row: 9 / 10;
+    }
+
+    select {
+        grid-column: 7 / 12;
+        grid-row: 12 / 14;
+    }
+
+    textarea {
+        grid-column: 2 / 12;
+        grid-row: 14 / 18;
+    }
+
+    input:nth-of-type(1) {
+        grid-column: 2 / 7;
+        grid-row: 10 / 12;
+    }
+
+    input:nth-of-type(2) {
+        grid-column: 7 / 12;
+        grid-row: 10 / 12;
+    }
+
+    input:nth-of-type(3) {
+        grid-column: 2 / 7;
+        grid-row: 12 / 14;
+    }
+
+    .skicka {
+        grid-column: 4 / 10;
+        grid-row: 19 / 20;
+    }
+
+    footer {
+        grid-row: 17 / 19;
+        grid-column: 1 / 7;
+        grid-template-columns: repeat(16, 1fr);
+        grid-template-rows: repeat(3, 1fr); 
+    }
+
+    .facebook {
+        grid-column: 4 / 8;
+        grid-row: 2 / 3;
+    }
+
+    .fb_icon {
+        grid-column: 3 / 4;
+        grid-row: 2 / 3;
+    }
+
+    .number {
+        grid-column: 10 / 15;
+        grid-row: 2 / 3;
+    }
+
+    .phone_icon {
+        grid-column: 9 / 10;
+        grid-row: 2 / 3;
+    }
+
+    .open_nav {
+        background-image: url(../img/baseline-menu-black-18.png);
+        background-repeat: no-repeat;
+        position: absolute;
+        width: 36px;
+        height: 36px;
+        top: 33px;
+        right: 10px;
+
+    }
+
+    .nav_desktop {
+        display: none;
+    }
+
+    .sidenav {
+        height: 100%; 
+        width: 0; 
+        position: fixed; 
+        z-index: 100; 
+        top: 0; 
+        right: 0;
+        background-color:rgb(224, 191, 255);  
+        overflow-x: hidden; 
+        padding-top: 60px; 
+        transition: 0.5s;
+    }
+
+    .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: black;
+        display: block;
+        transition: 0.3s;
+    }
+
+    .sidenav a:hover {
+        color: rgb(101, 101, 101); 
+    }
+
+    .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+
+    .nav_desktop {
+        display: none;
+    }
+
+}
 
 @media only screen and (min-device-width: 400px) {
 
@@ -255,23 +283,17 @@ span {
     header {
         grid-column: 1 / 2;
         grid-row: 1 / 4;
-        display: grid;
-        background-image: url(../img/test1.jpg);
-        background-repeat: no-repeat;
-        background-position: 50% 0%; 
+        background-image: url(../img/test1.jpg); 
     }
 
     main {
         grid-column: 1;
         grid-row: 4 / 13;
-        display: grid;
         grid-template-rows: repeat(24, 1fr);
         grid-template-columns: repeat(30, 1fr);
-        grid-row-gap: 3px;
-        grid-column-gap: 3px;
     }
 
-    nav {
+    .nav_desktop {
         grid-column: 1;
         grid-row: 4 / 5;
         display: grid;
@@ -279,31 +301,31 @@ span {
         grid-template-columns: repeat(39, 1fr);
         grid-row-gap: 3px;
         grid-column-gap: 3px;
+        z-index: 10;
     }
 
-            
     a {
-        text-decoration: none
+        font-weight: bold;
     }
 
-    a:visited {
-        color: black;
+    .nav_mob {
+        display: none;
+    }
+
+    .hem {
+        grid-column: 5 / 6;
+        grid-row: 1 / 2;
+    }
+
+    .kontakt {
+        grid-column: 7 / 9;
+        grid-row: 1 / 2;        
     }
 
     .välkommen {
         grid-row: 2 / 3;
         grid-column: 12 / 20;
     }    
-
-    h3 {
-        margin: 0;
-        padding: 0;
-        text-align: center;
-        display: grid;
-        justify-content: center;
-        align-items: center;
-    }
-
 
     .text_about {
         grid-row: 3 / 6;
@@ -318,47 +340,44 @@ span {
         display: grid;
         justify-content: center;
         align-items: center;
-
     }
 
     .img1 {
         grid-row: 6 / 15;
-        grid-column: 4 / 16;
-        background-color: lightgray;
-        background-repeat: no-repeat;
+        grid-column: 6 / 16;
+        background-image: url(../img/alex.jpg);
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     }
     
     .img2 {
         grid-row: 15 / 24;
-        grid-column: 4 / 16;
-        background-color: lightgrey;
-        background-repeat: no-repeat;
+        grid-column: 6 / 16; 
+        background-image: url(../img/vinterhagar.jpg);
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     }
     
     .img3 {
         grid-row: 6 / 15;
-        grid-column: 16 / 28;
-        background-color: lightgrey;
-        background-repeat: no-repeat;
+        grid-column: 16 / 26;
+        background-image: url(../img/abbey.jpg);
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     }
 
     .img4 {
         grid-row: 15 / 24;
-        grid-column: 16 / 28;
-        background-color: lightgrey;
-        background-repeat: no-repeat;
+        grid-column: 16 / 26;
+        background-image: url(../img/comma.jpg);
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     }
 
     .hitta_hit {
         grid-column: 19 / 27; 
         grid-row: 4 / 5;
-        background-color: lightgrey;
     }
         
     .intresseanmalan {
         grid-column: 5 / 13;
         grid-row: 4 / 5;
-        background-color: lightgrey;
     }
 
     input:nth-of-type(1) {
@@ -394,35 +413,31 @@ span {
     .vagbeskrivning {
         grid-column: 19 / 27;
         grid-row: 6 / 23;
-        background-color: lightgrey;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+
+        p {
+            font-size: 15px;
+            margin: 7px;
+        }
+
     }
 
-    .vagbeskrivning_p {
-        font-size: 14px;
-        margin: 3px;
+    .vagbeskrivning:hover {
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     }
 
-
-
+    .dekor {
+        grid-column: 15 / 17;
+        grid-row: 4 / 23;
+        background-image: url(../img/dekor.png);
+        background-repeat: no-repeat;
+    }
 
     footer {
         grid-row: 13 / 14;
-        grid-column: 1;
-        display: grid; 
+        grid-column: 1; 
         grid-template-columns: repeat(42, 1fr);
         grid-template-rows: repeat(3, 1fr);
-        background-color: lightgrey; 
-    }
-    
-    
-    footer p {
-        display: grid;
-        margin: 0;
-        color: black;
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-        padding: 0;
     }
 
     .facebook {
@@ -433,8 +448,6 @@ span {
     .fb_icon {
         grid-column: 14 / 15;
         grid-row: 2 / 3;
-        background-image: url(../img/fb_icon.png);
-        background-repeat: no-repeat;
     }
 
     .number {
@@ -445,10 +458,6 @@ span {
     .phone_icon {
         grid-column: 25 / 26;
         grid-row: 2 / 3;
-        background-image: url(../img/phone_icon.png);
-        background-repeat: no-repeat;
     }
 
-
 }
- 

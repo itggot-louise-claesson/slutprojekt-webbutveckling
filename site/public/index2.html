@@ -10,40 +10,35 @@
 
         <header>  
              
+            <nav class="nav_mob">
 
-            <div id="mySidenav" class="sidenav">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                <a href="index.html">Hem</a>
-                <a href="index2.html">Kontakt</a>
-            </div>
-                                
-            <span onclick="openNav()"></span>
-                  
+                <div id="mySidenav" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <a href="index.html">Hem</a>
+                    <a href="index2.html">Kontakt</a>
+                </div>
+                                    
+                <span class="open_nav" onclick="openNav()"></span>
+
+            </nav>
+
         </header>
 
-        <nav></nav>
+        <nav class="nav_desktop">
+
+            <a href="index.html" class="hem">Hem</a>
+            <a href="index2.html" class="kontakt">Kontakt</a>
+
+        </nav>
 
         <main> 
 <input type="text" placeholder="Namn" />
 <input type="text" placeholder="Email" />
 <input type="text" placeholder="Telefon nummer" />
 
-
-<article class="hitta_hit">
-    <h3>Hitta hit</h3>
-</article>
-
-
-<article class="vagbeskrivning">
-    <p class="vagbeskrivning_p"><b>Adress:</b> Thors väg 14, 43734 Lindome.<br><br><b>Vägbeskrivning om du kommer från E6:</b><br>Sväng av avfart 63 mot Kållered S, Lindome N. Håll dig sedan i vänsterfilen och kör mot Hällesåker. Kör ca 2,5 km tills vägen går ner i en svacka, sväng där höger mot Greggered. Kör 1,3 km, sedan kommer Thors väg på höger sida direkt efter busshållplats Dvärred. Stallet ligger ca 250 m in på vägen på höger sida.<br><br><b>Vägbeskrivning om du kommer från väg 156:</b><br> Kör väg 156 tills du är i höjd med Eriksmyst, sväng mot Lindome. Kör 15 km, tills du är igenom Hällesåker, sväng sedan höger in på Norra Hällesåkersvägen. Följ den i ca 5,5 km, vid busshållplatsen Dvärred, sväng vänster in på Thors väg. Stallet ligger ca 250 m in på vägen på höger sida.</p>
-    
-</article>
-
-
 <article class="intresseanmalan">
     <h3>Intresseanmälan</h3>
 </article>
-
 
 <select>
     <option selected disabled>Kontakta dig via:</option>
@@ -52,11 +47,22 @@
     <option>Samtal</option>
 </select>
 
-<textarea name="textarea">Berätta kort om dig och din häst!</textarea>
+<textarea name="textarea" placeholder="Berätta kort om dig och din häst!"></textarea>
 
 <button class="skicka">Skicka</button>
 
- </main>
+<article class="hitta_hit">
+    <h3>Hitta hit</h3>
+</article>
+
+
+<article class="vagbeskrivning">
+    <p class="vagbeskrivning_p"><b>Adress:</b> Thors väg 14, 43734 Lindome.<br><br><b>Vägbeskrivning om du kommer från E6:</b><br>Sväng av avfart 63 mot Kållered S, Lindome N. Håll dig sedan i vänsterfilen och kör mot Hällesåker. Kör ca 2,5 km tills vägen går ner i en svacka, sväng där höger mot Greggered. Kör 1,3 km, sedan kommer Thors väg på höger sida direkt efter busshållplats Dvärred. Stallet ligger ca 250 m in på vägen på höger sida.<br><br></p>
+    <p class="vagbeskrivning_p_desktop"><b>Vägbeskrivning om du kommer från väg 156:</b><br> Kör väg 156 tills du är i höjd med Eriksmyst, sväng mot Lindome. Kör 15 km, tills du är igenom Hällesåker, sväng sedan höger in på Norra Hällesåkersvägen. Följ den i ca 5,5 km, vid busshållplatsen Dvärred, sväng vänster in på Thors väg. Stallet ligger ca 250 m in på vägen på höger sida.</p>
+    
+</article>
+
+<article class="dekor"></article> </main>
 
         <footer>
             

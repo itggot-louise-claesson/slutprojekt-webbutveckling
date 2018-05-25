@@ -10,18 +10,26 @@
 
         <header>  
              
+            <nav class="nav_mob">
 
-            <div id="mySidenav" class="sidenav">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                <a href="index.html">Hem</a>
-                <a href="index2.html">Kontakt</a>
-            </div>
-                                
-            <span onclick="openNav()"></span>
-                  
+                <div id="mySidenav" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <a href="index.html">Hem</a>
+                    <a href="index2.html">Kontakt</a>
+                </div>
+                                    
+                <span class="open_nav" onclick="openNav()"></span>
+
+            </nav>
+
         </header>
 
-        <nav></nav>
+        <nav class="nav_desktop">
+
+            <a href="index.html" class="hem">Hem</a>
+            <a href="index2.html" class="kontakt">Kontakt</a>
+
+        </nav>
 
         <main> <%=yield%> </main>
 
